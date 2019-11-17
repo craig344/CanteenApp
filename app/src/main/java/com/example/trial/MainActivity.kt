@@ -1,4 +1,4 @@
-package com.example.canteenapp
+package com.example.trial
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

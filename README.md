@@ -1,2 +1,0 @@
-# CanteenApp
-Canteen Ordering App
