@@ -11,13 +11,27 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.canteens)
 
-        getSupportActionBar().setDisplayShowHomeEnabled(true);
-        getSupportActionBar().setLogo(R.mipmap.c);
-        getSupportActionBar().setDisplayUseLogoEnabled(true);
-
         var canteen1 = findViewById<ImageView>(R.id.imageView)
+        var canteen2 = findViewById<ImageView>(R.id.imageView2)
+        var canteen3 = findViewById<ImageView>(R.id.imageView3)
+        var canteen4 = findViewById<ImageView>(R.id.imageView4)
         canteen1.setOnClickListener{
             val addPage = Intent(this, Canteen1::class.java)
+            startActivity(addPage)
+            finish()
+        }
+        canteen2.setOnClickListener{
+            val addPage = Intent(this, Canteen2::class.java)
+            startActivity(addPage)
+            finish()
+        }
+        canteen3.setOnClickListener{
+            val addPage = Intent(this, Canteen3::class.java)
+            startActivity(addPage)
+            finish()
+        }
+        canteen4.setOnClickListener{
+            val addPage = Intent(this, Canteen4::class.java)
             startActivity(addPage)
             finish()
         }
