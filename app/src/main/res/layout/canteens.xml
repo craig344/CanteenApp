@@ -4,104 +4,137 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
+    <LinearLayout
+            android:background="@drawable/gradient_baround"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="262dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="#FFA50A"
+                android:text="HUNGER KEEDA" />
+
+
+
+
+
+        <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:src="@drawable/canteencart" />
+
+
+
+    </LinearLayout>
+
+
     <ScrollView
+            android:background="@drawable/gradient_baround"
+            android:layout_marginTop="60dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <LinearLayout
+        <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
 
-                <LinearLayout
-                        android:orientation="vertical"
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="200dp">
+
+
+                <ImageView
                         android:layout_width="match_parent"
-                        android:layout_marginTop="30dp"
-                        android:layout_height="200dp">
-
-
-                    <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="173dp" app:srcCompat="@drawable/canteen1_subway"
-                            android:id="@+id/imageView" android:layout_weight="1"/>
-                    <TextView
-                            android:text="Damodar Canteen"
-                            android:textStyle="bold"
-                            android:textSize="20dp"
-                            android:layout_gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"/>
+                        android:layout_height="173dp" app:srcCompat="@drawable/canteen1_subway"
+                        android:id="@+id/imageView" android:layout_weight="1"/>
+                <TextView
+                        android:text="Damodar Canteen"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView" android:layout_weight="1"/>
 
 
 
-                </LinearLayout>
-                <LinearLayout
-                            android:orientation="vertical"
-                            android:layout_width="match_parent"
-                            android:layout_marginTop="30dp"
-                            android:layout_height="200dp">
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="200dp">
 
-                    <ImageView
-                            android:layout_width="400dp"
-                            android:layout_height="wrap_content" app:srcCompat="@drawable/canteen2_pizzas"
-                            android:id="@+id/imageView2" android:layout_weight="1"/>
+                <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/canteen2_pizzas"
+                        android:id="@+id/imageView2" android:layout_weight="1"/>
 
-                    <TextView
-                            android:text="Pramod Canteen"
-                            android:textStyle="bold"
-                            android:textSize="20dp"
-                            android:layout_gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"/>
+                <TextView
+                        android:text="Pramod Canteen"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_weight="1"/>
 
-                </LinearLayout>
+            </LinearLayout>
 
-                <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_marginTop="30dp"
-                        android:layout_height="200dp">
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="200dp">
 
-                    <ImageView
-                            android:layout_width="398dp"
-                            android:layout_height="173dp" app:srcCompat="@drawable/canteen3_waffels"
-                            android:id="@+id/imageView3" android:layout_weight="1"/>
+                <ImageView
+                        android:layout_width="398dp"
+                        android:layout_height="173dp" app:srcCompat="@drawable/canteen3_waffels"
+                        android:id="@+id/imageView3" android:layout_weight="1"/>
 
-                    <TextView
-                            android:text="Maushi Canteen"
-                            android:textStyle="bold"
-                            android:textSize="20dp"
-                            android:layout_gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="1"/>
+                <TextView
+                        android:text="Maushi Canteen"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView3" android:layout_weight="1"/>
 
-                </LinearLayout>
-                <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_marginTop="30dp"
-                        android:layout_height="200dp">
+            </LinearLayout>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:layout_height="200dp">
 
-                    <ImageView
-                            android:layout_width="400dp"
-                            android:layout_height="wrap_content" app:srcCompat="@drawable/canteen4_icecream"
-                            android:id="@+id/imageView4" android:layout_weight="1"/>
+                <ImageView
+                        android:layout_width="400dp"
+                        android:layout_height="wrap_content" app:srcCompat="@drawable/canteen4_icecream"
+                        android:id="@+id/imageView4" android:layout_weight="1"/>
 
-                    <TextView
-                            android:text="Main University Canteen"
-                            android:textStyle="bold"
-                            android:textSize="20dp"
-                            android:layout_gravity="center"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_weight="1"/>
+                <TextView
+                        android:text="Main University Canteen"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" android:id="@+id/textView4" android:layout_weight="1"/>
 
-                </LinearLayout>
+            </LinearLayout>
 
 
 
 
 
-    </LinearLayout>
+        </LinearLayout>
     </ScrollView>
 </RelativeLayout>

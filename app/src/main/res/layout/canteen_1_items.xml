@@ -1,13 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@drawable/gradient_baround"
         xmlns:tools="http://schemas.android.com/tools"
         android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
 
 
+    <LinearLayout
+            android:background="@drawable/gradient_baround"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+        <TextView
+                android:layout_width="262dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:textColor="#FFA50A"
+                android:text="HUNGER KEEDA" />
+
+
+
+
+        <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:src="@drawable/canteencart" />
+
+
+
+    </LinearLayout>
+
+
     <ScrollView
+            android:layout_marginTop="60dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
         <LinearLayout
@@ -18,7 +50,7 @@
 
 
             <LinearLayout
-                    android:layout_width="match_parent"
+                    android:layout_width="391dp"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
@@ -26,13 +58,13 @@
                         android:id="@+id/canteen2_item1"
                         android:layout_width="213dp"
                         android:layout_height="163dp"
-                        app:srcCompat="@drawable/Canteen1_item1" />
+                        app:srcCompat="@drawable/canteen1_item1" />
 
                 <ImageView
                         android:id="@+id/canteen1_item2"
-                        android:layout_width="214dp"
-                        android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/Canteen1_item2" />
+                        android:layout_width="234dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/canteen1_item2" />
 
 
             </LinearLayout>
@@ -68,7 +100,7 @@
 
                     <TextView
                             android:id="@+id/canteen1_item2_text"
-                            android:layout_width="wrap_content"
+                            android:layout_width="191dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:text="Burger2" />
@@ -85,42 +117,57 @@
                 <LinearLayout
                         android:layout_width="216dp"
                         android:layout_height="33dp"
-                        android:orientation="horizontal"
-                        android:gravity="right">
+                        android:gravity="right"
+                        android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/canteen1_item1_addButton"
-                        android:layout_width="64dp"
-                        android:layout_height="wrap_content"
-                        android:gravity="right"
-                        android:text="+" />
+                            android:id="@+id/canteen1_item1_addButton"
+                            android:layout_width="53dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorbutton"
+                            android:gravity="right"
+                            android:text="+"
+                            android:textAlignment="center" />
+
                     <Button
                             android:id="@+id/canteen1_item1_deleteButton"
-                            android:layout_width="64dp"
+                            android:layout_width="53dp"
                             android:layout_height="wrap_content"
+                            android:background="@color/colorbutton"
                             android:gravity="right"
-                            android:text="-" />
+                            android:text="-"
+                            android:textAlignment="center" />
 
                 </LinearLayout>
 
-            <LinearLayout
-                    android:layout_width="218dp"
-                    android:layout_height="33dp"
-                    android:orientation="horizontal"
-                    android:gravity="right">
+                <LinearLayout
+                        android:layout_width="191dp"
+                        android:layout_height="33dp"
+                        android:gravity="right"
+                        android:orientation="horizontal">
 
 
-                <Button
-                        android:id="@+id/canteen1_item2_addButton"
-                        android:layout_width="60dp"
-                        android:layout_height="wrap_content"
-                        android:text="+" />
-                <Button
-                        android:id="@+id/canteen1_item2_deleteButton"
-                        android:layout_width="100dp"
-                        android:layout_height="wrap_content"
-                        android:text="-" />
-            </LinearLayout>
+                    <Button
+                            android:id="@+id/canteen1_item2_addButton"
+                            android:layout_width="53dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorbutton"
+                            android:gravity="right"
+                            android:text="+"
+                            android:textAlignment="center" />
+
+                    <Button
+                            android:id="@+id/canteen1_item2_deleteButton"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+
+                            android:background="@color/colorbutton"
+                            android:gravity="right"
+                            android:text="-"
+                            android:textAlignment="center" />
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -133,16 +180,16 @@
 
                 <ImageView
                         android:id="@+id/canteen1_item3"
-                        android:layout_width="203dp"
+                        android:layout_width="218dp"
                         android:layout_height="match_parent"
-                        app:srcCompat="@drawable/Canteen1_item3" />
+                        app:srcCompat="@drawable/canteen1_item3" />
 
                 <ImageView
                         android:id="@+id/canteen1_item4"
                         android:layout_width="214dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        app:srcCompat="@drawable/Canteen1_item4" />
+                        app:srcCompat="@drawable/canteen1_item4" />
 
 
             </LinearLayout>
@@ -200,35 +247,50 @@
 
                     <Button
                             android:id="@+id/canteen1_item3_addButton"
-                            android:layout_width="64dp"
+                            android:layout_width="53dp"
                             android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorbutton"
                             android:gravity="right"
+                            android:textAlignment="center"
                             android:text="+" />
                     <Button
                             android:id="@+id/canteen1_item3_deleteButton"
-                            android:layout_width="64dp"
+                            android:layout_width="53dp"
                             android:layout_height="wrap_content"
+
+                            android:background="@color/colorbutton"
                             android:gravity="right"
+                            android:textAlignment="center"
                             android:text="-" />
 
                 </LinearLayout>
 
                 <LinearLayout
-                        android:layout_width="218dp"
+                        android:layout_width="191dp"
                         android:layout_height="33dp"
-                        android:orientation="horizontal"
-                        android:gravity="right">
+                        android:gravity="right"
+                        android:orientation="horizontal">
 
 
                     <Button
                             android:id="@+id/canteen1_item4_addButton"
-                            android:layout_width="60dp"
+                            android:layout_width="53dp"
                             android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorbutton"
+                            android:gravity="right"
+                            android:textAlignment="center"
                             android:text="+" />
+
                     <Button
                             android:id="@+id/canteen1_item4_deleteButton"
-                            android:layout_width="100dp"
+                            android:layout_width="53dp"
                             android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:background="@color/colorbutton"
+                            android:gravity="right"
+                            android:textAlignment="center"
                             android:text="-" />
                 </LinearLayout>
 
