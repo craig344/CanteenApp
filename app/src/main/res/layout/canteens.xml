@@ -12,13 +12,19 @@
             android:orientation="horizontal">
 
         <TextView
-                android:layout_width="match_parent"
+                android:layout_width="261dp"
                 android:layout_height="match_parent"
                 android:gravity="center"
                 android:text="HUNGER KEEDA"
                 android:textColor="#FFA50A"
                 android:textSize="30dp"
                 android:textStyle="bold" />
+
+        <ImageButton
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:src="@drawable/cartlogo" />
 
 
     </LinearLayout>
