@@ -1,5 +1,6 @@
 package com.example.trial
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -15,6 +16,7 @@ class CartActivity : AppCompatActivity() {
         setContentView(R.layout.activity_cart)
 
         val buyBtn = findViewById<Button>(R.id.buy_button)
+        val viewBills = findViewById<Button>(R.id.button_vieworders)
         val linearLayout = findViewById<LinearLayout>(R.id.linearLayout)
         val cartTotal = findViewById<TextView>(R.id.cartTotal)
         cartTotal.text = "0"
@@ -26,6 +28,11 @@ class CartActivity : AppCompatActivity() {
                     break
                 }
             }
+        }
+
+        viewBills.setOnClickListener{
+            val page = Intent(this, BillActivity::class.java)
+            startActivity(page)
         }
 
         for( cartItem in CartProvider.CART_LIST){

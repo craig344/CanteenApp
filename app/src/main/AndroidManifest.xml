@@ -10,6 +10,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
         <activity android:name=".CartActivity"></activity>
+        <activity android:name=".BillActivity"></activity>
         <activity android:name=".Canteen1"></activity>
         <activity android:name=".Canteen2"></activity>
         <activity android:name=".Canteen3"></activity>
