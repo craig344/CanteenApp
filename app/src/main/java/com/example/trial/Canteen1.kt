@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class Canteen1 : AppCompatActivity(){
@@ -22,6 +23,9 @@ class Canteen1 : AppCompatActivity(){
         var removeItem3 = findViewById<Button>(R.id.canteen1_item3_deleteButton)
         var removeItem4 = findViewById<Button>(R.id.canteen1_item4_deleteButton)
 
+        var toastAdded = Toast.makeText(getApplicationContext(),"1 item added to cart", Toast.LENGTH_SHORT)
+        var toastRemoved = Toast.makeText(getApplicationContext(),"1 item removed to cart", Toast.LENGTH_SHORT)
+
         cartButton.setOnClickListener{
             val page = Intent(this, CartActivity::class.java)
             startActivity(page)
@@ -31,6 +35,7 @@ class Canteen1 : AppCompatActivity(){
             CartProvider.CART_LIST.forEach{
                 if(it.id == 1){
                     it.itemQuantity++
+                    toastAdded.show()
                 }
             }
         }
@@ -38,6 +43,7 @@ class Canteen1 : AppCompatActivity(){
             CartProvider.CART_LIST.forEach{
                 if(it.id == 2){
                     it.itemQuantity++
+                    toastAdded.show()
                 }
             }
         }
@@ -45,6 +51,7 @@ class Canteen1 : AppCompatActivity(){
             CartProvider.CART_LIST.forEach{
                 if(it.id == 3){
                     it.itemQuantity++
+                    toastAdded.show()
                 }
             }
         }
@@ -52,6 +59,7 @@ class Canteen1 : AppCompatActivity(){
             CartProvider.CART_LIST.forEach{
                 if(it.id == 4){
                     it.itemQuantity++
+                    toastAdded.show()
                 }
             }
         }
@@ -60,6 +68,7 @@ class Canteen1 : AppCompatActivity(){
             CartProvider.CART_LIST.forEach{
                 if(it.id == 1 && it.itemQuantity > 0){
                     it.itemQuantity--
+                    toastRemoved.show()
                 }
             }
         }
@@ -67,6 +76,7 @@ class Canteen1 : AppCompatActivity(){
             CartProvider.CART_LIST.forEach{
                 if(it.id == 2 && it.itemQuantity > 0){
                     it.itemQuantity--
+                    toastRemoved.show()
                 }
             }
         }
@@ -74,6 +84,7 @@ class Canteen1 : AppCompatActivity(){
             CartProvider.CART_LIST.forEach{
                 if(it.id == 3 && it.itemQuantity > 0){
                     it.itemQuantity--
+                    toastRemoved.show()
                 }
             }
         }
@@ -81,6 +92,7 @@ class Canteen1 : AppCompatActivity(){
             CartProvider.CART_LIST.forEach{
                 if(it.id == 4 && it.itemQuantity > 0){
                     it.itemQuantity--
+                    toastRemoved.show()
                 }
             }
         }
