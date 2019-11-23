@@ -12,13 +12,19 @@ class CartActivity : AppCompatActivity() {
 
         val linearLayout = findViewById<LinearLayout>(R.id.linearLayout)
 
-        CartProvider.initCart()
-
         for( cartItem in CartProvider.CART_LIST){
             if(cartItem.itemQuantity>0){
                 linearLayout.addView(CartItemView(this,cartItem))
             }
         }
-
+    }
+    fun refreshCart(){
+        val linearLayout = findViewById<LinearLayout>(R.id.linearLayout)
+        linearLayout.removeAllViews()
+        for( cartItem in CartProvider.CART_LIST){
+            if(cartItem.itemQuantity>0){
+                linearLayout.addView(CartItemView(this,cartItem))
+            }
+        }
     }
 }

@@ -23,14 +23,13 @@
                 android:text="HUNGER KEEDA" />
 
 
-
-
-
         <ImageButton
+                android:id="@+id/cartButton"
                 android:layout_width="80dp"
                 android:layout_height="match_parent"
                 android:gravity="right"
-                android:src="@drawable/cartlogo" />
+                android:src="@drawable/cartlogo"
+                android:tint="#FFA50A" />
 
 
 
