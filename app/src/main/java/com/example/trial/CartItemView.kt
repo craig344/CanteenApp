@@ -1,15 +1,11 @@
 package com.example.trial
 
-import android.app.Activity
 import android.content.Context
-import android.content.Intent
 import android.view.View
 import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.core.content.ContextCompat.startActivity
-import androidx.core.view.get
 
 class CartItemView : FrameLayout{
 
