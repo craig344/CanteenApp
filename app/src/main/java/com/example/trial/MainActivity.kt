@@ -3,6 +3,7 @@ package com.example.trial
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
 
 class MainActivity : AppCompatActivity() {
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.canteens)
 
+        var cartButton = findViewById<ImageButton>(R.id.cartButton)
         var canteen1 = findViewById<ImageView>(R.id.imageView)
         var canteen2 = findViewById<ImageView>(R.id.imageView2)
         var canteen3 = findViewById<ImageView>(R.id.imageView3)
@@ -34,6 +36,13 @@ class MainActivity : AppCompatActivity() {
             val addPage = Intent(this, Canteen4::class.java)
             startActivity(addPage)
             finish()
+        }
+
+
+
+        cartButton.setOnClickListener{
+            val page = Intent(this, CartActivity::class.java)
+            startActivity(page)
         }
     }
 
