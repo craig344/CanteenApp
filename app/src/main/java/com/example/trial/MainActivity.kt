@@ -36,4 +36,11 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
     }
+
+    fun initCart(){
+        var cartProvider = CartProvider
+        cartProvider.id_counter = 1
+        cartProvider.initCart()
+
+    }
 }
