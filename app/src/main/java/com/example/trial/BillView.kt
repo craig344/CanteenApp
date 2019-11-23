@@ -5,7 +5,7 @@ import android.view.View
 import android.widget.FrameLayout
 import android.widget.TextView
 
-class BillItemView : FrameLayout {
+class BillView : FrameLayout {
     var Activity : BillActivity
     val billItem : Bill
 
@@ -15,8 +15,10 @@ class BillItemView : FrameLayout {
         initView()
     }
     private fun initView() {
-        val view = View.inflate(context, R.layout.view_bill_item, null)
+        val view = View.inflate(context, R.layout.view_bill, null)
         addView(view)
+
+
         val billItemDate = findViewById<TextView>(R.id.billItemDate)
         val billItemStatus = findViewById<TextView>(R.id.billItemStatus)
 

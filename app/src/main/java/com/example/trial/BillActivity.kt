@@ -8,11 +8,12 @@ class BillActivity : AppCompatActivity () {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_bill)
 
-        val linearLayout = findViewById<LinearLayout>(R.id.linearLayout2)
+        val linearLayout = findViewById<LinearLayout>(R.id.billLinearLayout)
 
         for( billItem in BillProvider.BILL_LIST){
-                linearLayout.addView(BillItemView(this,billItem))
+                linearLayout.addView(BillView(this,billItem))
         }
     }
 }
