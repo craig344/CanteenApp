@@ -14,7 +14,7 @@ class BillActivity : AppCompatActivity () {
         val linearLayout = findViewById<LinearLayout>(R.id.billLinearLayout)
 
         for( billItem in BillProvider.BILL_LIST){
-                linearLayout.addView(BillView(this,billItem))
+                linearLayout.addView(BillView(this,billItem),0)
         }
     }
     fun viewDetails(id: Int){

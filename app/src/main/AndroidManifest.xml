@@ -9,14 +9,16 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".CartActivity"></activity>
-        <activity android:name=".BillActivity"></activity>
-        <activity android:name=".BillItemActivity"></activity>
-        <activity android:name=".Canteen1"></activity>
-        <activity android:name=".Canteen2"></activity>
-        <activity android:name=".Canteen3"></activity>
-        <activity android:name=".Canteen4"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".CartActivity"/>
+        <activity android:name=".BillActivity"/>
+        <activity android:name=".BillItemActivity"/>
+        <activity android:name=".Canteen1"/>
+        <activity android:name=".Canteen2"/>
+        <activity android:name=".Canteen3"/>
+        <activity android:name=".Canteen4"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".SignupActivity"/>
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
